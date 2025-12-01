@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add inside <head> tag -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-omW4gVyzkienf5A4XrS0d+gQLZBTzCw3LtU9MJpKLFatP3lVz7b8cx6e3SYDzM2zbi72xHiU0uYxRrxQF3oywg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Awesome CDN for icons -->
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+  <link rel="stylesheet" href="tailcss.css">
+  
+</head>
+
+<body class="bg-[#06142E] text-white font-[Poppins]">
+
+  <!-- NAVBAR -->
+  <!-- <header class="fixed top-0 left-0 w-full bg-[#030B21] shadow-md z-[999] w-full fixed top-0 left-0 px-10 py-5 text-white bg-gray-900 shadow-lg animate-slideDown"> -->
+  <header class="w-full fixed top-0 left-0  text-white bg-[#071526] shadow-lg z-[999] h-[80px]">
+    <div class="flex justify-between items-center px-[10%] py-5">
+
+      <!-- Logo -->
+      <a class="text-2xl font-semibold text-white animate-slideDown opacity-0  [animation-delay:0.3s]"
+        href="#">Portfolio</a>
+
+      <!-- Menu -->
+      <nav class="hidden md:flex space-x-9 ">
+        <a href="#" class="relative group text-xl animate-slideDown opacity-0  [animation-delay:0.4s]">
+          Home
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a href="#" class="relative group text-xl  animate-slideDown opacity-0  [animation-delay:0.5s]">
+          About
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a href="#" class="relative group text-xl animate-slideDown opacity-0  [animation-delay:0.6s]">
+          Services
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a href="#" class="relative group text-xl animate-slideDown opacity-0  [animation-delay:0.7s]">
+          Skills
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a href="#" class="relative group text-xl animate-slideDown opacity-0  [animation-delay:0.8s]">
+          Projects
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a href="#" class="relative group text-xl animate-slideDown opacity-0  [animation-delay:0.9s]">
+          Contact
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Icon -->
+      <button class="md:hidden text-3xl" id="menu-btn">&#9776;</button>
+
+    </div>
+  </header>
+
+  <!-- MOBILE MENU (Dropdown) -->
+  <div id="mobile-menu" class="hidden flex-col bg-[#030B21] text-center space-y-4 py-5 text-lg md:hidden">
+    <a href="#" class="hover:text-cyan-400 transition">Home</a>
+    <a href="#" class="hover:text-cyan-400 transition">About</a>
+    <a href="#" class="hover:text-cyan-400 transition">Services</a>
+    <a href="#" class="hover:text-cyan-400 transition">Skills</a>
+    <a href="#" class="hover:text-cyan-400 transition">Projects</a>
+    <a href="#" class="hover:text-cyan-400 transition">Contact</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section
+    class="min-h-screen flex  bg-[#031C2C] text-white px-10 flex-col md:flex-row justify-between items-center px-[10%] gap-10 pt-[120px]">
+    <!-- <section class="min-h-screen flex items-center bg-gray-900 text-white px-10"> -->
+    <!-- <section class="min-h-screen flex flex-col md:flex-row justify-between items-center px-[10%] gap-10 pt-[120px]"> -->
+
+    <div class="max-w-xl">
+      <h3 class="text-2xl font-medium text-[32px] font-bold opacity-0 animate-slideUp [animation-delay:0.3s]">Hello,
+        It's Me</h3>
+      <h1 class="text-5xl font-bold mt-2 opacity-0 animate-slideUp [animation-delay:0.6s]">Mohd Israr Shekh</h1>
+
+      <h3 class="text-3xl font-semibold mt-3 opacity-0 animate-slideUp [animation-delay:0.9s]">
+        And I'm a <span id="typing" class="text-cyan-400"></span>
+      </h3>
+
+      <p class="mt-4 text-lg leading-relaxed text-gray-300 opacity-0 animate-slideUp [animation-delay:1.2s]">
+        I'm a Web Designer & Developer with experience in AI/ML, Data Science, Data Analytics.
+      </p>
+
+      <!-- icon  -->
+      <!-- <div class="flex gap-5 mt-6 text-xl">
+    <a href="#" class="w-10 h-10 border border-cyan-400 rounded-full flex items-center justify-center "><i class="fab fa-facebook"></i></a>
+    <a href="#" class="w-10 h-10 border border-cyan-400 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:text-black transition"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="w-10 h-10 border border-cyan-400 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:text-black transition"><i class="fab fa-github"></i></a>
+   </div> -->
+
+      <div class="flex gap-4 mt-6">
+        <!-- Facebook -->
+        <a href="#" title="facebook"
+          class="w-10 h-10 border border-cyan-400 rounded-full opacity-0  [animation-delay:1.4s] animate-slideRight flex items-center justify-center hover:bg-cyan-400 hover:text-black transition   hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan]"">
+    <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-5 h-5 animate-slideRight">
+          <path fill="currentColor"
+            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06H295V6.26S259.5 0 225.36 0c-73.22 0-121.36 44.38-121.36 124.72v70.62H22.89V288h81.11v224h100.17V288z" />
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="#" title="instagram"
+          class="w-10 h-10 border border-cyan-400 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:text-black transition   hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan] opacity-0 animate-slideRight [animation-delay:1.4s]">
+          <i class="fa-brands fa-instagram text-2xl animate-slideRight"></i>
+        </a>
+
+
+        <!-- WhatsApp -->
+        <a href="#" title="whatsApp"
+          class="w-10 h-10 border border-cyan-400 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:text-black transition   hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan] opacity-0 animate-slideRight [animation-delay:1.6s]">
+          <i class="fa-brands fa-whatsapp text-2xl animate-slideRight"></i>
+        </a>
+
+        <!-- GitHub -->
+        <a href="#" title="github"
+          class="w-10 h-10 border border-cyan-400 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:text-black transition   hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan] opacity-0 animate-slideRight [animation-delay:1.8s]">
+          <i class="fa-brands fa-github text-2xl animate-slideRight"></i>
+        </a>
+
+        <!-- linkedin  -->
+        <a href="#" title="linkedin"
+          class="w-10 h-10 border border-cyan-400 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:text-black transition  hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan] opacity-0 animate-slideRight [animation-delay:2s]">
+          <i class="fa-brands fa-linkedin-in text-2xl animate-slideRight"></i>
+        </a>
+      </div>
+
+      <div class="mt-10 mr-10">
+        <a href="#about"
+          class="btn-box  inline-block px-6 py-3 rounded-full bg-cyan-400 text-black font-semibold transition-all duration-300
+   hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan] opacity-0 animate-slideUp [animation-delay:2s] shadow-[0_0_2px_cyan,0_0_10px_cyan,0_0_10px_cyan,0_0_30px_cyan] ">
+          More About Me
+        </a>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="w-72 h-72 rounded-full border-4 border-transparent 
+                  bg-gradient-to-r from-fuchsia-500 via-cyan-400 to-blue-500 p-1 animate-pulse ">
+        <img src="asset/israr.jpeg" class="w-full h-full object-cover rounded-full" />
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+
+<section id="about" class="about w-full min-h-screen bg-[#031C2C] text-white flex items-center justify-center px-5 md:px-16">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+    <!-- IMAGE SECTION -->
+    <div class="flex justify-center">
+      <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-transparent bg-gradient-to-r from-fuchsia-500 via-cyan-400 to-blue-500 p-1 shadow-[0_0_40px_rgba(0,255,255,0.5)] animate-pulse">
+        <img src="asset/israr.jpeg" alt="profile" class="w-full h-full object-cover rounded-full" />
+      </div>
+    </div>
+
+    <!-- TEXT SECTION -->
+    <div class="about-text">
+      <h2 class="text-4xl md:text-5xl font-bold">About<span class="text-cyan-400"> Me</span></h2>
+      <h4 class="mt-3 text-2xl font-semibold text-white">Data Science & AI/ML Engineer</h4>
+
+      <p class="mt-4 leading-relaxed text-[17px] text-gray-300">
+        I am a passionate Data Science and AI/ML Engineer with strong skills in data analysis,
+        machine learning, and building intelligent solutions using Python.
+      </p>
+
+      <p class="mt-3 leading-relaxed text-[17px] text-gray-300">
+        My expertise includes EDA, model development, feature engineering,
+        visualization, and deployment.
+      </p>
+
+      <p class="mt-3 leading-relaxed text-[17px] text-gray-300">
+        I am continuously improving my knowledge in Deep Learning and cloud
+        technologies, and I aim to work on innovative ML projects.
+      </p>
+
+      <!-- BUTTON -->
+      <a href="#about"
+        class="inline-block mt-6 px-7 py-3 rounded-full bg-cyan-400 text-black font-semibold transition-all duration-300 
+        shadow-[0_0_10px_cyan,0_0_40px_cyan] hover:shadow-[0_0_15px_cyan,0_0_60px_cyan]">
+        More About Me
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- -------Services------------------ -->
+ <!-- <section class="bg-[#031C2C]">
+     <div class="services" id="services">
+       <div class="container">
+        <h1 class="sub-title">My<span>Services</span></h1>
+        <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code" style="color:#00eeff"></i>
+              <h2>Data Science</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse provident fugiat maiores quidem nam, voluptatem recusandae aliquam magni neque molestias odit. Molestias sint repellat, sapiente fugit aspernatur possimus fugiat.</p>
+              <a href="#" class="read">learn more</a>
+            </div>
+        </div>
+
+        <div class="services-list">
+            <div>
+              <i class="fa-solid fa-crop"></i>
+              <h2>Data Science</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse provident fugiat maiores quidem nam, voluptatem recusandae aliquam magni neque molestias odit. Molestias sint repellat, sapiente fugit aspernatur possimus fugiat.</p>
+              <a href="#" class="read">learn more</a>
+            </div>
+        </div>
+
+        <div class="services-list">
+            <div>
+             <i class="fa-brands fa-apple" style="color:#00eeff"></i>
+              <h2>Data Science</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse provident fugiat maiores quidem nam, voluptatem recusandae aliquam magni neque molestias odit. Molestias sint repellat, sapiente fugit aspernatur possimus fugiat.</p>
+              <a href="#" class="read">learn more</a>
+            </div>
+        </div>
+       
+       </div>
+     </div>
+ </section> -->
+
+ <!-- -------Services------------------ -->
+<section id="services" class="bg-[#031C2C] py-24 text-white">
+  <div class="container mx-auto px-6">
+
+      <!-- Title -->
+      <h1 class="text-center text-[60px] font-bold pb-16">
+        My<span class="text-[#0ef]"> Services</span>
+      </h1>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Card 1 -->
+        <div class="p-10 rounded-2xl text-sm transition-all duration-500 
+          bg-transparent shadow-[1px_1px_20px_#012290f7,1px_1px_40px_#0053b8f7]
+          hover:-translate-y-3">
+          <i class="fa-solid fa-code text-[50px] mb-6" style="color:#00eeff"></i>
+          <h2 class="text-[30px] font-medium mb-4">Data Science</h2>
+          <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse provident fugiat maiores quidem nam,
+            voluptatem recusandae aliquam magni neque molestias odit.</p>
+          <a href="#"
+            class="mt-6 inline-block bg-[#0ef] text-[#081b29] px-7 py-3 rounded-full text-[16px] font-semibold tracking-wide 
+            shadow-[0_0_5px_#0ef,0_0_25px_#0ef] hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan,0_0_200px_cyan] 
+            transition-all duration-300">
+            learn more
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-10 rounded-2xl text-sm transition-all duration-500 
+          bg-transparent shadow-[1px_1px_20px_#012290f7,1px_1px_40px_#0053b8f7]
+          hover:-translate-y-3">
+          <i class="fa-solid fa-crop text-[50px] mb-6" style="color:#00eeff"></i>
+          <h2 class="text-[30px] font-medium mb-4">UI/UX Design</h2>
+          <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse provident fugiat maiores quidem nam,
+            voluptatem recusandae aliquam magni neque molestias odit.</p>
+          <a href="#"
+            class="mt-6 inline-block bg-[#0ef] text-[#081b29] px-7 py-3 rounded-full text-[16px] font-semibold tracking-wide 
+            shadow-[0_0_5px_#0ef,0_0_25px_#0ef] hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan,0_0_200px_cyan] 
+            transition-all duration-300">
+            learn more
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-10 rounded-2xl text-sm transition-all duration-500 
+          bg-transparent shadow-[1px_1px_20px_#012290f7,1px_1px_40px_#0053b8f7]
+          hover:-translate-y-3">
+          <i class="fa-brands fa-apple text-[50px] mb-6" style="color:#00eeff"></i>
+          <h2 class="text-[30px] font-medium mb-4">App Design</h2>
+          <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse provident fugiat maiores quidem nam,
+            voluptatem recusandae aliquam magni neque molestias odit.</p>
+          <a href="#"
+            class="mt-6 inline-block bg-[#0ef] text-[#081b29] px-7 py-3 rounded-full text-[16px] font-semibold tracking-wide 
+            shadow-[0_0_5px_#0ef,0_0_25px_#0ef] hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan,0_0_200px_cyan] 
+            transition-all duration-300">
+            learn more
+          </a>
+        </div>
+
+      </div>
+  </div>
+</section>
+
+ <!-- Title -->
+      <h1 class="text-center text-[60px] font-bold pb-16">
+        My<span class="text-[#0ef]">Skills</span>
+      </h1>
+   
+    <section>
+      <div class="container1" id="skills">
+        <h1 class="heading1">Technical Skills</h1>
+        <div class="Technical-bars">
+          <div class="bar">
+            <div class="info">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+  <!-- JS Typing Animation -->
+  <script>
+    const roles = ["AI Engineer", "Data Scientist", "Frontend Developer", "ML Engineer"];
+    let index = 0, charIndex = 0;
+    const typingText = document.getElementById("typing");
+
+    function typeEffect() {
+      if (charIndex < roles[index].length) {
+        typingText.innerHTML += roles[index].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeEffect, 100);
+      } else {
+        setTimeout(() => {
+          typingText.innerHTML = "";
+          charIndex = 0;
+          index = (index + 1) % roles.length;
+          typeEffect();
+        }, 1000);
+      }
+    }
+    typeEffect();
+
+    // mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+
+
+</body>
+</html>
