@@ -4,18 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>israr-portfolio</title>
+  <link rel="icon" type="image/png" href="asset/favicon.png">
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Add inside <head> tag -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-omW4gVyzkienf5A4XrS0d+gQLZBTzCw3LtU9MJpKLFatP3lVz7b8cx6e3SYDzM2zbi72xHiU0uYxRrxQF3oywg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- Font Awesome CDN for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- <link rel="stylesheet" href="stylesheet.css"> -->
   <link rel="stylesheet" href="tailcss.css">
 
 </head>
@@ -23,7 +22,6 @@
 <body class="bg-[#031C2C] text-white font-[Poppins]">
 
   <!-- NAVBAR -->
-  <!-- <header class="fixed top-0 left-0 w-full bg-[#030B21] shadow-md z-[999] w-full fixed top-0 left-0 px-10 py-5 text-white bg-gray-900 shadow-lg animate-slideDown"> -->
   <header class="w-full fixed top-0 left-0  text-white bg-[#071526] shadow-lg z-[999] h-[80px]">
     <div class="flex justify-between items-center px-[10%] py-5">
 
@@ -70,29 +68,35 @@
         </a>
       </nav>
 
-      <!-- Mobile Menu Icon -->
-      <button class="md:hidden text-3xl" id="menu-btn">&#9776;</button>
+     <!-- Mobile Menu Button -->
+<button id="mobile-menu-btn" class="md:hidden text-white p-2">
+  <i class="fa-solid fa-bars text-2xl"></i>
+</button>
 
     </div>
   </header>
 
+  
   <!-- MOBILE MENU (Dropdown) -->
-  <div id="mobile-menu" class="hidden flex-col bg-[#030B21] text-center space-y-4 py-5 text-lg md:hidden">
-    <a href="#" class="hover:text-cyan-400 transition">Home</a>
-    <a href="#" class="hover:text-cyan-400 transition">About</a>
-    <a href="#" class="hover:text-cyan-400 transition">Services</a>
-    <a href="#" class="hover:text-cyan-400 transition">Skills</a>
-    <a href="#" class="hover:text-cyan-400 transition">Projects</a>
-    <a href="#" class="hover:text-cyan-400 transition">Contact</a>
+<div id="mobile-menu" class="hidden flex-col bg-[#030B21] text-center space-y-4 py-5 text-lg md:hidden absolute mt-20 left-0 w-full z-50 transform  transition-all duration-700 ease-in-out">
+  <div>
+    <a href="#home" class="hover:text-cyan-400 transition">Home</a>
   </div>
+  <div><a href="#" class=" hover:text-cyan-400 transition ">About</a></div>
+  <div><a href="#" class="hover:text-cyan-400 transition">Services</a></div>
+  <div><a href="#" class="hover:text-cyan-400 transition">Skills</a></div>
+  <div><a href="#" class="hover:text-cyan-400 transition">Projects</a></div>
+  <div><a href="#" class="hover:text-cyan-400 transition">Contact</a></div>
+</div>
 
   <!-- HERO SECTION -->
   <section id="home"
     class="min-h-screen flex  bg-[#031C2C] text-white px-10 flex-col md:flex-row justify-between items-center px-[10%] gap-10 pt-[120px]">
-    <!-- <section class="min-h-screen flex items-center bg-gray-900 text-white px-10"> -->
-    <!-- <section class="min-h-screen flex flex-col md:flex-row justify-between items-center px-[10%] gap-10 pt-[120px]"> -->
 
-    <div class="max-w-xl">
+    <div class="max-w-xl order-2 md:order-1 mt-6 md:mt-0">
+
+
+
       <h3 class="text-2xl font-medium text-[32px] font-bold opacity-0 animate-slideUp [animation-delay:0.3s]">Hello,
         It's Me</h3>
       <h1 class="text-5xl font-bold mt-2 opacity-0 animate-slideUp [animation-delay:0.6s]">Mohd Israr Shekh</h1>
@@ -105,7 +109,7 @@
         I'm a Web Designer & Developer with experience in AI/ML, Data Science, Data Analytics.
       </p>
 
-  
+
       <div class="flex gap-4 mt-6">
         <!-- Facebook -->
         <a href="https://www.facebook.com/moisrar.moisrar.547" title="facebook"
@@ -143,50 +147,49 @@
       </div>
 
       <div class="flex gap-6 mt-6">
-   <a href="#about"
+        <a href="#about"
           class="btn-box  inline-block px-6 py-3 rounded-full bg-cyan-400 text-black font-semibold transition-all duration-300
    hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan] opacity-0 animate-slideUp [animation-delay:2s] shadow-[0_0_2px_cyan,0_0_10px_cyan,0_0_10px_cyan,0_0_30px_cyan] ">
           More About Me
         </a>
 
-  <a href="resume.html" target="_blank"
-     class="px-8 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full
+        <a href="resume.html" target="_blank"
+          class="px-8 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full
             hover:bg-cyan-400 hover:text-black transition-all shadow-[0_0_15px_#22d3ee] hover:shadow-[0_0_25px_#22d3ee]  opacity-0 animate-slideUp [animation-delay:2s]">
-     Resume
-  </a>
-</div>
+          Resume
+        </a>
+      </div>
 
     </div>
 
-    <div class="relative">
-      <div class="w-72 h-72 rounded-full border-4 border-transparent 
+
+    <div class="relative order-1 md:order-2 ">
+      <div class="w-48 h-48 md:w-72 md:h-72  rounded-full border-4 border-transparent 
                   bg-gradient-to-r from-fuchsia-500 via-cyan-400 to-blue-500 p-1 animate-pulse ">
         <img src="asset/israr.jpeg" class="w-full h-full object-cover rounded-full" />
       </div>
-
-
     </div>
 
   </section>
 
 
 
-<!-- --------------------About-----section----------------------------------------------- -->
+  <!-- --------------------About-----section----------------------------------------------- -->
   <section id="about"
-    class="about w-full min-h-screen bg-[#031C2C] text-white flex items-center justify-center px-5 md:px-16">
+    class="about w-full min-h-screen bg-[#031C2C] text-white flex items-center justify-center px-5 md:px-16 ">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
       <!-- IMAGE SECTION -->
       <div class="flex justify-center">
         <div
-          class="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-transparent bg-gradient-to-r from-fuchsia-500 via-cyan-400 to-blue-500 p-1 shadow-[0_0_40px_rgba(0,255,255,0.5)] animate-pulse">
+          class="hidden md:block w-48 h-48 md:w-72 md:h-72  rounded-full border-4 border-transparent bg-gradient-to-r from-fuchsia-500 via-cyan-400 to-blue-500 p-1 shadow-[0_0_40px_rgba(0,255,255,0.5)] animate-pulse">
           <img src="asset/israr.jpeg" alt="profile" class="w-full h-full object-cover rounded-full" />
         </div>
       </div>
 
       <!-- TEXT SECTION -->
       <div class="about-text">
-        <h2 class="text-4xl md:text-5xl font-bold">About<span class="text-cyan-400"> Me</span></h2>
+        <h1 class="text-center  text-[60px] font-bold mt-8">About<span class="text-cyan-400"> Me</span></h1>
         <h4 class="mt-3 text-2xl font-semibold text-white">Data Science & AI/ML Engineer</h4>
 
         <p class="mt-4 leading-relaxed text-[17px] text-gray-300">
@@ -230,11 +233,15 @@
         <div class="p-10 rounded-2xl text-sm transition-all duration-500 
           bg-transparent shadow-[1px_1px_20px_#012290f7,1px_1px_40px_#0053b8f7]
           hover:-translate-y-3">
-          <i class="fa-solid fa-code text-[50px] mb-6" style="color:#00eeff"></i>
+
+          <i class="fa-solid fa-database text-[50px] mb-6" style="color:#00eeff"></i>
+
           <h2 class="text-[30px] font-medium mb-4">Data Science</h2>
-          <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse provident
-            fugiat maiores quidem nam,
-            voluptatem recusandae aliquam magni neque molestias odit.</p>
+          <p class="leading-relaxed">
+            I help turn complex datasets into actionable insights. From data cleaning and analysis to predictive
+            modeling and visualization, I provide solutions that help businesses make informed, data-driven decisions.
+          </p>
+
           <a href="#" class="mt-6 inline-block bg-[#0ef] text-[#081b29] px-7 py-3 rounded-full text-[16px] font-semibold tracking-wide 
             shadow-[0_0_5px_#0ef,0_0_25px_#0ef] hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan,0_0_200px_cyan] 
             transition-all duration-300">
@@ -246,11 +253,15 @@
         <div class="p-10 rounded-2xl text-sm transition-all duration-500 
           bg-transparent shadow-[1px_1px_20px_#012290f7,1px_1px_40px_#0053b8f7]
           hover:-translate-y-3">
-          <i class="fa-solid fa-crop text-[50px] mb-6" style="color:#00eeff"></i>
-          <h2 class="text-[30px] font-medium mb-4">UI/UX Design</h2>
-          <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse provident
-            fugiat maiores quidem nam,
-            voluptatem recusandae aliquam magni neque molestias odit.</p>
+
+          <i class="fa-solid fa-brain text-[50px] mb-6" style="color:#00eeff"></i>
+          <h2 class="text-[30px] font-medium mb-4">AI & ML</h2>
+          <p class="leading-relaxed">
+            I design and implement intelligent systems that learn from data. From building machine learning models to
+            deploying AI solutions, I help transform raw data into predictive insights and automated decision-making
+            tools.
+          </p>
+
           <a href="#" class="mt-6 inline-block bg-[#0ef] text-[#081b29] px-7 py-3 rounded-full text-[16px] font-semibold tracking-wide 
             shadow-[0_0_5px_#0ef,0_0_25px_#0ef] hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan,0_0_200px_cyan] 
             transition-all duration-300">
@@ -262,11 +273,14 @@
         <div class="p-10 rounded-2xl text-sm transition-all duration-500 
           bg-transparent shadow-[1px_1px_20px_#012290f7,1px_1px_40px_#0053b8f7]
           hover:-translate-y-3">
-          <i class="fa-brands fa-apple text-[50px] mb-6" style="color:#00eeff"></i>
-          <h2 class="text-[30px] font-medium mb-4">App Design</h2>
-          <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse provident
-            fugiat maiores quidem nam,
-            voluptatem recusandae aliquam magni neque molestias odit.</p>
+          <i class="fa-solid fa-chart-line text-[50px] mb-6" style="color:#00eeff"></i>
+
+          <h2 class="text-[30px] font-medium mb-4">Data Analysis</h2>
+          <p class="leading-relaxed">
+            I analyze complex datasets to uncover meaningful patterns and trends. From data cleaning and visualization
+            to generating actionable insights, I help businesses make informed, data-driven decisions.
+          </p>
+
           <a href="#" class="mt-6 inline-block bg-[#0ef] text-[#081b29] px-7 py-3 rounded-full text-[16px] font-semibold tracking-wide 
             shadow-[0_0_5px_#0ef,0_0_25px_#0ef] hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan,0_0_200px_cyan] 
             transition-all duration-300">
@@ -280,283 +294,252 @@
 
 
   <!-- ----------------------------------------skills---------------------------------------------------------- -->
-   <!-- Title -->
-<h1 id="skills" class="text-center text-5xl md:text-6xl font-bold pb-16">
-  My<span class="text-[#0ef]">Skills</span>
-</h1>
+  <!-- Title -->
+  <h1 id="skills" class="text-center text-5xl md:text-6xl font-bold pb-16">
+    My<span class="text-[#0ef]">Skills</span>
+  </h1>
 
-<section  class="bg-[#031C2C]  flex flex-wrap justify-center gap-10 px-6">
+  <section class="bg-[#031C2C]  flex flex-wrap justify-center gap-10 px-6">
 
-  <!-- Technical Skills -->
-  <div class="w-[600px] p-10">
-    <h1 class="text-center underline underline-offset-8 decoration-4 mb-12 text-2xl font-semibold">
-      Technical Skills
-    </h1>
+    <!-- Technical Skills -->
+    <div class="w-[600px] p-10">
+      <h1 class="text-center underline underline-offset-8 decoration-4 mb-12 text-2xl font-semibold">
+        Technical Skills
+      </h1>
 
-    <div class="space-y-8">
-      
-
-     <!-- bar-1 -->
-<div>
-  <div class="flex items-center gap-3 mb-2">
-    <i class="fa-brands fa-html5 text-orange-600 text-2xl"></i>
-    <span class="font-medium text-lg">HTML</span>
-  </div>
-  <div class="h-2 bg-black rounded-xl overflow-hidden">
-    <!-- Set width manually -->
-    <div class="h-full bg-[#0ef] rounded-xl origin-left animate-fill w-[90%]"></div>
-  </div>
-  <span class="float-right text-white text-sm mt-1">90%</span>
-</div>
-
-     <!-- bar-2 -->
-<div>
-  <div class="flex items-center gap-3 mb-2">
-    <i class="fa-brands fa-css3-alt text-blue-600 text-2xl"></i>
-    <span class="font-medium text-lg">CSS</span>
-  </div>
-  <div class="h-2 bg-black rounded-xl overflow-hidden">
-    <div class="h-full bg-[#0ef] rounded-xl origin-left animate-fill w-[60%]"></div>
-  </div>
-  <span class="float-right text-white text-sm mt-1">60%</span>
-</div>
+      <div class="space-y-8">
 
 
-      <!-- bar-3 -->
-      <div>
-        <div class="flex items-center gap-3 mb-2">
-          <i class="fa-brands fa-js text-yellow-400 text-2xl"></i>
-          <span class="font-medium text-lg">JavaScript</span>
+        <!-- bar-1 -->
+        <div>
+          <div class="flex items-center gap-3 mb-2">
+            <i class="fa-brands fa-html5 text-orange-600 text-2xl"></i>
+            <span class="font-medium text-lg">HTML</span>
+          </div>
+          <div class="h-2 bg-black rounded-xl overflow-hidden">
+            <!-- Set width manually -->
+            <div class="h-full bg-[#0ef] rounded-xl origin-left animate-fill w-[90%]"></div>
+          </div>
+          <span class="float-right text-white text-sm mt-1">90%</span>
         </div>
-        <div class="h-2 bg-black rounded-xl overflow-hidden">
-          <div class="h-full bg-[#0ef] rounded-xl origin-left animate-fill w-[85%]"></div>
+
+        <!-- bar-2 -->
+        <div>
+          <div class="flex items-center gap-3 mb-2">
+            <i class="fa-brands fa-css3-alt text-blue-600 text-2xl"></i>
+            <span class="font-medium text-lg">CSS</span>
+          </div>
+          <div class="h-2 bg-black rounded-xl overflow-hidden">
+            <div class="h-full bg-[#0ef] rounded-xl origin-left animate-fill w-[60%]"></div>
+          </div>
+          <span class="float-right text-white text-sm mt-1">60%</span>
         </div>
-        <span class="float-right text-white text-sm mt-1">85%</span>
+
+
+        <!-- bar-3 -->
+        <div>
+          <div class="flex items-center gap-3 mb-2">
+            <i class="fa-brands fa-js text-yellow-400 text-2xl"></i>
+            <span class="font-medium text-lg">JavaScript</span>
+          </div>
+          <div class="h-2 bg-black rounded-xl overflow-hidden">
+            <div class="h-full bg-[#0ef] rounded-xl origin-left animate-fill w-[85%]"></div>
+          </div>
+          <span class="float-right text-white text-sm mt-1">85%</span>
+        </div>
+
+        <!-- bar-4 -->
+        <div>
+          <div class="flex items-center gap-3 mb-2">
+            <i class="fa-brands fa-python text-blue-400 text-2xl"></i>
+            <span class="font-medium text-lg">Python</span>
+          </div>
+          <div class="h-2 bg-black rounded-xl overflow-hidden">
+            <div class="h-full bg-[#0ef] rounded-xl origin-left animate-fill w-[50%]"></div>
+          </div>
+          <span class="float-right text-white text-sm mt-1">50%</span>
+        </div>
+
       </div>
+    </div>
 
-      <!-- bar-4 -->
-      <div>
-        <div class="flex items-center gap-3 mb-2">
-          <i class="fa-brands fa-python text-blue-400 text-2xl"></i>
-          <span class="font-medium text-lg">Python</span>
+
+    <!-- Professional Skills -->
+    <div class="w-[600px] p-10">
+      <h1 class="text-center underline underline-offset-8 decoration-4 mb-12 text-2xl font-semibold">
+        Professional Skills
+      </h1>
+
+      <div class="grid grid-cols-2 gap-10">
+
+        <div class="relative flex flex-col items-center">
+          <div class="relative w-32 h-32">
+            <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" stroke-width="10" class="stroke-gray-800" fill="transparent"></circle>
+
+              <circle cx="50" cy="50" r="40" stroke-width="10" stroke-linecap="round"
+                class="stroke-[#0ef] animate-radial-90" fill="transparent" stroke-dasharray="251.2"
+                stroke-dashoffset="25.12"></circle>
+            </svg>
+
+            <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
+              90%
+            </div>
+          </div>
+          <p class="mt-3 font-medium text-white">Creativity</p>
         </div>
-        <div class="h-2 bg-black rounded-xl overflow-hidden">
-          <div class="h-full bg-[#0ef] rounded-xl origin-left animate-fill w-[50%]"></div>
+
+
+
+        <!-- radial-2 -->
+        <div class="relative flex flex-col items-center">
+          <div class="relative w-32 h-32">
+            <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+
+              <circle cx="50" cy="50" r="40" stroke-width="10" class="stroke-gray-800" fill="transparent"></circle>
+
+              <circle cx="50" cy="50" r="40" stroke-width="10" stroke-linecap="round"
+                class="stroke-[#0ef] animate-radial-65" fill="transparent" stroke-dasharray="251.2"
+                stroke-dashoffset="25.12"></circle>
+
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">65%</div>
+          </div>
+          <p class="mt-3 font-medium">Communication</p>
         </div>
-        <span class="float-right text-white text-sm mt-1">50%</span>
+
+
+        <!-- radial-3 -->
+        <div class="relative flex flex-col items-center">
+          <div class="relative w-32 h-32">
+            <svg class="transform -rotate-90" viewBox="0 0 100 100">
+
+              <circle cx="50" cy="50" r="40" stroke-width="10" class="stroke-gray-800" fill="transparent"></circle>
+
+              <circle cx="50" cy="50" r="40" stroke-width="10" stroke-linecap="round"
+                class="stroke-[#0ef] animate-radial-75" fill="transparent" stroke-dasharray="251.2"
+                stroke-dashoffset="62.8"></circle>
+
+
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
+              75%
+            </div>
+          </div>
+          <p class="mt-3 font-medium">Problem Solving</p>
+        </div>
+
+        <!-- radial-4 -->
+        <div class="relative flex flex-col items-center">
+          <div class="relative w-32 h-32">
+            <svg class="transform -rotate-90" viewBox="0 0 100 100">
+
+              <circle cx="50" cy="50" r="40" stroke-width="10" class="stroke-gray-800" fill="transparent"></circle>
+
+              <circle cx="50" cy="50" r="40" stroke-width="10" stroke-linecap="round"
+                class="stroke-[#0ef] animate-radial-75" fill="transparent" stroke-dasharray="251.2"
+                stroke-dashoffset="37.68"></circle>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
+              85%
+            </div>
+          </div>
+          <p class="mt-3 font-medium">Teamwork</p>
+        </div>
+
       </div>
-
     </div>
-  </div>
 
-
-  <!-- Professional Skills -->
-  <div class="w-[600px] p-10">
-    <h1 class="text-center underline underline-offset-8 decoration-4 mb-12 text-2xl font-semibold">
-      Professional Skills
-    </h1>
-
-    <div class="grid grid-cols-2 gap-10">
-
-<div class="relative flex flex-col items-center">
-  <div class="relative w-32 h-32">
-    <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
-      <circle
-        cx="50" cy="50" r="40"
-        stroke-width="10"
-        class="stroke-gray-800"
-        fill="transparent"
-      ></circle>
-
-      <circle
-        cx="50" cy="50" r="40"
-        stroke-width="10"
-        stroke-linecap="round"
-        class="stroke-[#0ef] animate-radial-90"
-        fill="transparent"
-        stroke-dasharray="251.2"
-        stroke-dashoffset="25.12"
-      ></circle>
-    </svg>
-
-    <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
-      90%
-    </div>
-  </div>
-  <p class="mt-3 font-medium text-white">Creativity</p>
-</div>
+  </section>
 
 
 
-      <!-- radial-2 -->
-<div class="relative flex flex-col items-center">
-  <div class="relative w-32 h-32">
-    <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+  <!-- --------------------------project------------------------------------------------------------- -->
+  <section id="project" class="bg-[#031C2C]  py-16" id="project">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-12">
+        Latest <span class="text-blue-400">Projects</span>
+      </h2>
 
-       <circle
-        cx="50" cy="50" r="40"
-        stroke-width="10"
-        class="stroke-gray-800"
-        fill="transparent"
-      ></circle>
-
-      <circle
-        cx="50" cy="50" r="40"
-        stroke-width="10"
-        stroke-linecap="round"
-        class="stroke-[#0ef] animate-radial-65"
-        fill="transparent"
-        stroke-dasharray="251.2"
-        stroke-dashoffset="25.12"
-      ></circle>
-
-    </svg>
-    <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">65%</div>
-  </div>
-  <p class="mt-3 font-medium">Communication</p>
-</div>
-
-
-      <!-- radial-3 -->
-      <div class="relative flex flex-col items-center">
-        <div class="relative w-32 h-32">
-          <svg class="transform -rotate-90" viewBox="0 0 100 100">
-
-             <circle
-        cx="50" cy="50" r="40"
-        stroke-width="10"
-        class="stroke-gray-800"
-        fill="transparent"
-      ></circle>
-
-      <circle
-        cx="50" cy="50" r="40"
-        stroke-width="10"
-        stroke-linecap="round"
-        class="stroke-[#0ef] animate-radial-75"
-        fill="transparent"
-        stroke-dasharray="251.2"
-  stroke-dashoffset="62.8"
-      ></circle>
-
-              
-          </svg>
-          <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
-            75%
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="group relative overflow-hidden rounded-xl shadow-lg">
+          <img src="asset/Data-science-project.jpeg" alt="Data Science Project"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-center">
+            <h5 class="text-xl font-semibold text-white mb-2">Data Science</h5>
+            <p class="text-gray-300 text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              magnam exercitationem earum aliquam dolor atque saepe.</p>
+            <a href="#" class="inline-block text-blue-400 text-lg">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
           </div>
         </div>
-        <p class="mt-3 font-medium">Problem Solving</p>
-      </div>
 
-      <!-- radial-4 -->
-      <div class="relative flex flex-col items-center">
-        <div class="relative w-32 h-32">
-          <svg class="transform -rotate-90" viewBox="0 0 100 100">
-
-           <circle
-        cx="50" cy="50" r="40"
-        stroke-width="10"
-        class="stroke-gray-800"
-        fill="transparent"
-      ></circle>
-
-      <circle
-        cx="50" cy="50" r="40"
-        stroke-width="10"
-        stroke-linecap="round"
-        class="stroke-[#0ef] animate-radial-75"
-        fill="transparent"
-        stroke-dasharray="251.2"
-  stroke-dashoffset="37.68"
-      ></circle>   
-          </svg>
-          <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
-            85%
+        <!-- Project Card 2 -->
+        <div class="group relative overflow-hidden rounded-xl shadow-lg">
+          <img src="asset/OIP.jpeg" alt="UI/UX Project"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-center">
+            <h5 class="text-xl font-semibold text-white mb-2">UI/UX Design</h5>
+            <p class="text-gray-300 text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              magnam exercitationem earum aliquam dolor atque saepe.</p>
+            <a href="#" class="inline-block text-blue-400 text-lg">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
           </div>
         </div>
-        <p class="mt-3 font-medium">Teamwork</p>
-      </div>
 
-    </div>
-  </div>
-
-</section>
-
-
-
-<!-- --------------------------project------------------------------------------------------------- -->
- <section id="project" class="bg-[#031C2C]  py-16" id="project">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-12">
-      Latest <span class="text-blue-400">Projects</span>
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- Project Card 1 -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg">
-        <img src="asset/Data-science-project.jpeg" alt="Data Science Project" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-center">
-          <h5 class="text-xl font-semibold text-white mb-2">Data Science</h5>
-          <p class="text-gray-300 text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magnam exercitationem earum aliquam dolor atque saepe.</p>
-          <a href="#" class="inline-block text-blue-400 text-lg">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Project Card 2 -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg">
-        <img src="asset/OIP.jpeg" alt="UI/UX Project" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-center">
-          <h5 class="text-xl font-semibold text-white mb-2">UI/UX Design</h5>
-          <p class="text-gray-300 text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magnam exercitationem earum aliquam dolor atque saepe.</p>
-          <a href="#" class="inline-block text-blue-400 text-lg">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Project Card 3 -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg">
-        <img src="asset/aiml.png" alt="AI/ML Project" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-center">
-          <h5 class="text-xl font-semibold text-white mb-2">AI/ML Project</h5>
-          <p class="text-gray-300 text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magnam exercitationem earum aliquam dolor atque saepe.</p>
-          <a href="#" class="inline-block text-blue-400 text-lg">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+        <!-- Project Card 3 -->
+        <div class="group relative overflow-hidden rounded-xl shadow-lg">
+          <img src="asset/aiml.png" alt="AI/ML Project"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-center">
+            <h5 class="text-xl font-semibold text-white mb-2">AI/ML Project</h5>
+            <p class="text-gray-300 text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              magnam exercitationem earum aliquam dolor atque saepe.</p>
+            <a href="#" class="inline-block text-blue-400 text-lg">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- -----------------contact--section------------------------------------------------------------ -->
-<section id="contact" class="contact bg-[#031C2C] text-white py-16 px-6 md:px-20 flex flex-col md:flex-row gap-10" id="contact">
+  <!-- -----------------contact--section------------------------------------------------------------ -->
+  <section id="contact" class="contact bg-[#031C2C] text-white py-16 px-6 md:px-20 flex flex-col md:flex-row gap-10"
+    id="contact">
 
-  <!-- Contact Info -->
-  <div class="contact-text flex-1 space-y-6">
-    <h2 class="text-4xl md:text-5xl font-bold">
-      Contact <span class="text-cyan-400">Me</span>
-    </h2>
-    <h4 class="text-xl md:text-2xl font-semibold text-gray-300">Let's work Together</h4>
-    <p class="text-gray-400 leading-relaxed">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit corporis dignissimos ipsam, nemo mollitia nihil maxime accusantium, sapiente recusandae porro aliquid laboriosam officiis nesciunt assumenda obcaecati nulla velit at nam?
-    </p>
-    
-    <!-- Contact Details -->
-    <ul class="space-y-2 text-gray-300">
-      <li class="flex items-center gap-2">
-        <i class="fas fa-envelope text-cyan-400"></i> isra@gmail.com
-      </li>
-      <li class="flex items-center gap-2">
-        <i class="fas fa-phone text-cyan-400"></i> 1234567890
-      </li>
-    </ul>
+    <!-- Contact Info -->
+    <div class="contact-text flex-1 space-y-6">
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Contact <span class="text-cyan-400">Me</span>
+      </h2>
+      <h4 class="text-xl md:text-2xl font-semibold text-gray-300">Let's Work Together</h4>
+      <p class="text-gray-400 leading-relaxed">
+        I’m always excited to collaborate on AI/ML, Data Science, and Data Analysis projects. Whether you need
+        predictive models, machine learning pipelines, data visualization, or insights from complex datasets—feel free
+        to reach out. Let’s explore data and build intelligent solutions together!
+      </p>
 
-    <!-- Social Icons -->
-    <div class="flex gap-4 mt-6">
+
+      <!-- Contact Details -->
+      <ul class="space-y-2 text-gray-300">
+        <li class="flex items-center gap-2">
+          <i class="fas fa-envelope text-cyan-400"></i> israrshekh.code22@gmail.com
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fas fa-phone text-cyan-400"></i> 9044508134
+        </li>
+      </ul>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4 mt-6">
         <!-- Facebook -->
         <a href="#" title="facebook"
           class="w-10 h-10 border border-cyan-400 rounded-full opacity-0  [animation-delay:1.4s] animate-slideRight flex items-center justify-center hover:bg-cyan-400 hover:text-black transition   hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan]"">
@@ -592,84 +575,48 @@
         </a>
       </div>
 
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form flex-1 bg-gray-800 p-8 rounded-xl shadow-lg">
+      <p id="result" class="text-center text-cyan-400 font-semibold mb-6 text-2xl"></p>
+
+      <!-- <form id="contactForm"  method="post" class="flex flex-col gap-4"> -->
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="post" class="flex flex-col gap-4">
+        <input type="hidden" name="access_key" value="db074382-537a-4cd9-a272-aec8226ce809">
+        <input type="text" name="name" placeholder="Enter Your Name"
+          class="p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+          required>
+        <input type="email" name="email" placeholder="Enter Your Email"
+          class="p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+          required>
+        <input type="text" name="subject" placeholder="Enter Your Subject"
+          class="p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        <textarea name="message" placeholder="Enter Your Message"
+          class="p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+          rows="6"></textarea>
+        <input type="submit" value="Submit"
+          class="bg-cyan-400 hover:bg-cyan-500 text-gray-900 font-semibold py-3 rounded-md cursor-pointer transition-all">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="last-text text-center text-gray-400 py-6 bg-[#071526]">
+    <p>Developed with love by Israr shekh © 2025</p>
   </div>
 
-  <!-- Contact Form -->
-  <div class="contact-form flex-1 bg-gray-800 p-8 rounded-xl shadow-lg">
-    <form action="#" class="flex flex-col gap-4">
-      <input type="text" placeholder="Enter Your Name" class="p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400" required>
-      <input type="email" placeholder="Enter Your Email" class="p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400" required>
-      <input type="text" placeholder="Enter Your Subject" class="p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400">
-      <textarea placeholder="Enter Your Message" class="p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400" rows="6"></textarea>
-      <input type="submit" value="Submit" class="bg-cyan-400 hover:bg-cyan-500 text-gray-900 font-semibold py-3 rounded-md cursor-pointer transition-all">
-    </form>
-  </div>
-</section>
-
-<!-- Footer -->
-<div class="last-text text-center text-gray-400 py-6">
-  <p>Developed with love by Israr shekh © 2025</p>
-</div>
-
-<!-- Back to Top Button -->
-<a href="#" id="backToTopBtn"
-   class="fixed left-5 bottom-5 bg-cyan-400 hover:bg-cyan-500 text-gray-900 p-3 rounded-full shadow-lg transition-all opacity-0 pointer-events-none">
-  <i class="fas fa-arrow-up text-xl"></i>
-</a>
-
-
-<script>
-  const backToTopBtn = document.getElementById('backToTopBtn');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
-      backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
-      backToTopBtn.classList.add('opacity-100');
-    } else {
-      backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
-      backToTopBtn.classList.remove('opacity-100');
-    }
-  });
-</script>
-
-
-
-
+  <!-- Back to Top Button -->
+  <a href="#" id="backToTopBtn"
+    class="fixed left-5 bottom-5 bg-cyan-400 hover:bg-cyan-500 text-gray-900 p-3 rounded-full shadow-lg transition-all opacity-0 pointer-events-none">
+    <i class="fas fa-arrow-up text-xl"></i>
+  </a>
 
 
   <!-- JS Typing Animation -->
-  <script>
-    const roles = ["AI Engineer", "Data Scientist", "Frontend Developer", "ML Engineer"];
-    let index = 0, charIndex = 0;
-    const typingText = document.getElementById("typing");
+  <script src="main.js">  </script>
 
-    function typeEffect() {
-      if (charIndex < roles[index].length) {
-        typingText.innerHTML += roles[index].charAt(charIndex);
-        charIndex++;
-        setTimeout(typeEffect, 100);
-      } else {
-        setTimeout(() => {
-          typingText.innerHTML = "";
-          charIndex = 0;
-          index = (index + 1) % roles.length;
-          typeEffect();
-        }, 1000);
-      }
-    }
-    typeEffect();
-
-    // mobile menu toggle
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
-
-
-
+  
 </body>
 
 </html>
