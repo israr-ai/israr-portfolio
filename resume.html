@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Israr Shekh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailcss.css">
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full bg-[#071526] shadow-lg z-[999]">
+        <div class="flex justify-between items-center px-[10%] py-5">
+
+            <!-- Logo -->
+            <a class="text-2xl font-semibold text-cyan-400" href="#">Portfolio</a>
+
+            <!-- Menu -->
+            <nav class="hidden md:flex space-x-9 text-lg">
+                <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#service" class="hover:text-cyan-400 transition">Services</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                <a href="#project" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-3xl" id="menu-btn">&#9776;</button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" class="hidden flex-col bg-[#071526] text-center space-y-4 py-5 text-lg md:hidden">
+            <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+            <a href="#about" class="hover:text-cyan-400 transition">About</a>
+            <a href="#service" class="hover:text-cyan-400 transition">Services</a>
+            <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+            <a href="#project" class="hover:text-cyan-400 transition">Projects</a>
+            <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="max-w-4xl mx-auto p-8 pt-28">
+
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-bold text-cyan-400">Israr Shekh</h1>
+            <p class="text-gray-300 mt-2 text-lg">Data Scientist | AI / ML Engineer | Data Analyst</p>
+        </header>
+
+        <!-- Contact & Social Links -->
+        <div class="text-center mt-2 mb-6 text-gray-300">
+            <p class="text-lg">📞 +91 9044508134 | ✉️ israrshekh.code22@gmail.com</p>
+            <div class="flex justify-center space-x-6 mt-3 text-xl font-semibold">
+                <a href="https://github.com/Mdiscode" target="_blank" class="hover:text-cyan-400 transition">GitHub</a>
+                <a href="https://linkedin.com/in/moisrar-shekh-97103533a" target="_blank"
+                    class="hover:text-cyan-400 transition">LinkedIn</a>
+            </div>
+        </div>
+        <!-- Download Resume Button -->
+        <div class="text-center mb-10">
+            <a href="Israr-resume.pdf" download
+                class="px-6 py-3 bg-cyan-400 text-gray-900 font-semibold rounded-xl hover:bg-cyan-300 transition-all duration-300 shadow-lg">
+                Download Resume
+            </a>
+        </div>
+
+        <!-- Summary -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold border-b-2 border-cyan-400 inline-block mb-4">Professional Summary</h2>
+            <p class="text-gray-300 leading-7">
+                Passionate Data Scientist and AI/ML Engineer with hands-on experience applying machine learning,
+                predictive analysis, and data visualization to real-world business problems. Skilled in Python, SQL,
+                Power BI, statistics, and model building such as regression, classification, forecasting, and churn
+                prediction.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold border-b-2 border-cyan-400 inline-block mb-4">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-200">
+        <p class="bg-gray-800 p-2 rounded-lg text-center">Python</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">Machine Learning</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">Deep Learning Basics</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">Data Analysis</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">EDA & Feature Engineering</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">Statistics & Probability</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">SQL & MySQL</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">Power BI</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">Excel (Advanced)</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">Data Visualization</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">AI / ML Algorithms</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">Prompt Engineering</p>
+        <p class="bg-gray-800 p-2 rounded-lg text-center">HTML / CSS / Tailwind</p>
+      </div>
+    </section>
+
+
+        <!-- Projects -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold border-b-2 border-cyan-400 inline-block mb-4">Projects</h2>
+            <ul class="space-y-3 text-gray-300">
+                <li>🏠 <span class="text-cyan-400 font-semibold">House Price Prediction:</span> Regression model
+                    estimating pricing using feature engineering.</li>
+                <li>🎗 <span class="text-cyan-400 font-semibold">Breast Cancer Detection:</span> ML classification model
+                    (96% accuracy).</li>
+                <li>🎓 <span class="text-cyan-400 font-semibold">Student Marks Prediction:</span> Linear regression
+                    model.</li>
+                <li>📊 <span class="text-cyan-400 font-semibold">Sales Forecasting:</span> Forecasting using ARIMA &
+                    Prophet.</li>
+                <li>📍 <span class="text-cyan-400 font-semibold">Customer Churn Prediction:</span> Classification &
+                    visualization insights.</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold border-b-2 border-cyan-400 inline-block mb-4">Education & Certifications</h2>
+            <ul class="space-y-3 text-gray-300">
+                <li><span class="text-cyan-400 font-semibold">BCA - VNSGU University</span> (2022–2025)</li>
+                <li><span class="text-cyan-400 font-semibold">Python & ML Certification</span> - Udemy</li>
+                <li><span class="text-cyan-400 font-semibold">Excel for Data Science</span> - Udemy</li>
+                <li><span class="text-cyan-400 font-semibold">Prompt Engineering</span></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- MOBILE MENU JS -->
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", () => {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>
+
