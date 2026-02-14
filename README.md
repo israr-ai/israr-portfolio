@@ -18,8 +18,6 @@ A passionate **Web Developer, Data Scientist & AI/ML Engineer** who loves buildi
 ## 🌐 Live Demo
 
 🔗 **Portfolio Live:**  
-visite : https://israr-ai.netlify.app/
-
 vercel :https://israr-portfolio-sepia.vercel.app/
 
 ---
