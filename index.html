@@ -511,9 +511,12 @@
 <section id="project" class="bg-[#031C2C] py-20">
   <div class="container mx-auto px-6">
 
-    <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-14">
+    <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-4">
       Latest <span class="text-blue-400">Projects</span>
     </h2>
+
+    <!-- Project Counter -->
+    <p id="projectCounter" class="text-center text-cyan-400 font-semibold mb-10 text-lg"></p>
 
     <!-- Slider Wrapper -->
     <div class="relative max-w-5xl mx-auto overflow-hidden">
@@ -521,9 +524,9 @@
       <!-- Slides -->
       <div id="projectSlides" class="flex transition-transform duration-500">
 
-       <!-- Slide 1-----------------start------------------------------------------------------------ -->
+       <!-- ==================== PROJECT-1 START : Portfolio ==================== -->
         <div class="min-w-full grid md:grid-cols-2 gap-10 items-center">
-          
+
           <!-- Left Content -->
           <div class="text-white">
             <h3 class="text-3xl font-bold mb-4">Portfolio</h3>
@@ -556,16 +559,17 @@
           </div>
 
           <!-- Right Image -->
-          <div class="rounded-xl overflow-hidden shadow-lg">
+          <div class="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] hover:-translate-y-2">
             <img src="asset/image.png"
-              class="w-full h-72 object-cover">
+              class="w-full h-72 object-cover transition-transform duration-500 hover:scale-110">
           </div>
         </div>
+        <!-- ==================== PROJECT-1 END : Portfolio ==================== -->
 
 
-         <!------ Slide 2 -----------start---------------------------------------------------------------->
+        <!-- ==================== PROJECT-2 START : Todo App ==================== -->
         <div class="min-w-full grid md:grid-cols-2 gap-10 items-center">
-          
+
           <!-- Left Content -->
           <div class="text-white">
             <h3 class="text-3xl font-bold mb-4">Todo App</h3>
@@ -597,28 +601,29 @@
           </div>
 
           <!-- Right Image -->
-          <div class="rounded-xl overflow-hidden shadow-lg">
+          <div class="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] hover:-translate-y-2">
             <img src="asset/TodoApp.jpeg"
-              class="w-full h-72 object-cover">
+              class="w-full h-72 object-cover transition-transform duration-500 hover:scale-110">
           </div>
         </div>
+        <!-- ==================== PROJECT-2 END : Todo App ==================== -->
 
 
-        <!------ Slide 2 -----------start---------------------------------------------------------------->
+        <!-- ==================== PROJECT-3 START : Customer Churn Prediction ==================== -->
         <div class="min-w-full grid md:grid-cols-2 gap-10 items-center">
-          
+
           <!-- Left Content -->
           <div class="text-white">
-            <h3 class="text-3xl font-bold mb-4">Data Science Project</h3>
+            <h3 class="text-3xl font-bold mb-4">Customer Churn Prediction</h3>
             <p class="text-gray-300 mb-6">
-              Data analysis, visualization, feature engineering and ML models
-              using Python, Pandas, NumPy & Scikit-learn.
+               Machine learning project for predicting customer churn using Python,
+    Pandas, NumPy, Scikit-learn, feature engineering, and data visualization.
             </p>
 
             <div class="flex gap-4 flex-wrap">
   
   <!-- GitHub Button -->
-  <a href="https://github.com/your-username/project-repo"
+  <a href="https://github.com/israr-ai/CustomerChurn_prediction"
      target="_blank"
      class="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-5 py-3 rounded-lg transition">
     <i class="fa-brands fa-github text-xl"></i>
@@ -626,7 +631,7 @@
   </a>
 
   <!-- Live Project Button -->
-  <a href="https://your-live-project-link.com"
+  <a href="https://churn-guard-4a9b.onrender.com"
      target="_blank"
      class="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-lg transition">
     <i class="fa-solid fa-globe text-lg"></i>
@@ -638,13 +643,14 @@
           </div>
 
           <!-- Right Image -->
-          <div class="rounded-xl overflow-hidden shadow-lg">
-            <img src="asset/Data-science-project.jpeg"
-              class="w-full h-72 object-cover">
+          <div class="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] hover:-translate-y-2">
+            <img src="asset/customer_churn.png"
+              class="w-full h-72 object-cover transition-transform duration-500 hover:scale-110">
           </div>
         </div>
+        <!-- ==================== PROJECT-3 END : Customer Churn Prediction ==================== -->
 
-        <!-- Slide 2 ----------start----------------------------------------------------------------------->
+        <!-- ==================== PROJECT-4 START : House Price Prediction ==================== -->
         <div class="min-w-full grid md:grid-cols-2 gap-10 items-center">
           <div class="text-white">
            <h3 class="text-3xl font-bold mb-4">House Price Prediction</h3>
@@ -657,7 +663,7 @@
              <div class="flex gap-4 flex-wrap">
   
   <!-- GitHub Button -->
-  <a href="https://github.com/your-username/project-repo"
+  <a href="https://github.com/israr-ai/HousePricePrediction"
      target="_blank"
      class="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-5 py-3 rounded-lg transition">
     <i class="fa-brands fa-github text-xl"></i>
@@ -665,7 +671,7 @@
   </a>
 
   <!-- Live Project Button -->
-  <a href="https://your-live-project-link.com"
+  <a href=" https://israr-housepriceprediction.onrender.com/"
      target="_blank"
      class="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-lg transition">
     <i class="fa-solid fa-globe text-lg"></i>
@@ -675,24 +681,26 @@
 </div>
           </div>
 
-          <div class="rounded-xl overflow-hidden shadow-lg">
+          <div class="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] hover:-translate-y-2">
             <img src="asset/OIP.jpeg"
-              class="w-full h-72 object-cover">
+              class="w-full h-72 object-cover transition-transform duration-500 hover:scale-110">
           </div>
         </div>
+        <!-- ==================== PROJECT-4 END : House Price Prediction ==================== -->
 
-        <!-- Slide 3 ------------start--------------------------------------------------------------------->
+        <!-- ==================== PROJECT-5 START : HelpDesk-AI ==================== -->
         <div class="min-w-full grid md:grid-cols-2 gap-10 items-center">
           <div class="text-white">
-            <h3 class="text-3xl font-bold mb-4">AI / ML Project</h3>
-            <p class="text-gray-300 mb-6">
-              Machine learning & AI models including
-              classification, prediction & automation.
-            </p>
+            <h3 class="text-3xl font-bold mb-4">HelpDesk-AI</h3>
+           <p class="text-gray-300 mb-6">
+  Modern AI-powered helpdesk platform developed with Claude Code, featuring
+  intelligent ticket management, AI-assisted responses, email automation,
+  Better Auth, PostgreSQL, and Railway deployment.
+</p>
              <div class="flex gap-4 flex-wrap">
   
   <!-- GitHub Button -->
-  <a href="https://github.com/your-username/project-repo"
+  <a href="https://github.com/israr-ai/ai-helpdesk"
      target="_blank"
      class="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-5 py-3 rounded-lg transition">
     <i class="fa-brands fa-github text-xl"></i>
@@ -700,7 +708,7 @@
   </a>
 
   <!-- Live Project Button -->
-  <a href="https://your-live-project-link.com"
+  <a href="https://ai-helpdesk-production-de17.up.railway.app/"
      target="_blank"
      class="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-lg transition">
     <i class="fa-solid fa-globe text-lg"></i>
@@ -710,11 +718,118 @@
 </div>
           </div>
 
-          <div class="rounded-xl overflow-hidden shadow-lg">
+          <div class="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] hover:-translate-y-2">
             <img src="asset/aiml.png"
-              class="w-full h-72 object-cover">
+              class="w-full h-72 object-cover transition-transform duration-500 hover:scale-110">
           </div>
         </div>
+        <!-- ==================== PROJECT-5 END : HelpDesk-AI ==================== -->
+
+        <!-- ==================== PROJECT-6 START : ML Pipeline ==================== -->
+        <div class="min-w-full grid md:grid-cols-2 gap-10 items-center">
+          <div class="text-white">
+            <h3 class="text-3xl font-bold mb-4">ML Pipeline</h3>
+           <p class="text-gray-300 mb-6">
+  End-to-end Machine Learning pipeline project covering data ingestion, preprocessing,
+  feature engineering, model training, and evaluation, built with Python for a
+  reusable and modular ML workflow.
+</p>
+             <div class="flex gap-4 flex-wrap">
+
+  <!-- GitHub Button -->
+  <a href="https://github.com/israr-ai/ml-pipeline-project"
+     target="_blank"
+     class="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-5 py-3 rounded-lg transition">
+    <i class="fa-brands fa-github text-xl"></i>
+    GitHub
+  </a>
+
+  <!-- Live Project Button -->
+  <a href="#"
+     class="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-lg transition">
+    <i class="fa-solid fa-globe text-lg"></i>
+    Live Demo
+  </a>
+
+</div>
+          </div>
+
+          <div id="mlPipelineGallery" class="relative rounded-xl overflow-hidden shadow-lg h-72 transition-all duration-500 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] hover:-translate-y-2">
+            <img src="asset/student-1.png" class="ml-slide-img absolute inset-0 w-full h-full object-cover opacity-100 transition-all duration-700 hover:scale-110">
+            <img src="asset/student-2.png" class="ml-slide-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-700 hover:scale-110">
+            <img src="asset/student-3.png" class="ml-slide-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-700 hover:scale-110">
+          </div>
+        </div>
+        <!-- ==================== PROJECT-6 END : ML Pipeline ==================== -->
+
+        <!-- ==================== PROJECT-7 START : Motorola Mobile Sales Analytics ==================== -->
+        <div class="min-w-full grid md:grid-cols-2 gap-10 items-center">
+          <div class="text-white">
+            <h3 class="text-3xl font-bold mb-4">Motorola Mobile Sales Analytics</h3>
+            <p class="text-gray-300 mb-6">
+              Power BI project analyzing Motorola mobile sales data, featuring interactive dashboards,
+              sales trends, and performance insights to support data-driven business decisions.
+            </p>
+            <div class="flex gap-4 flex-wrap">
+
+  <!-- GitHub Button -->
+  <a href="https://github.com/israr-ai/powerbi-projects/blob/main/01-Motorola%20Mobile%20Sales%20Analytics/Motorola_Mobile_Sales_Analytics_Report.pdf"
+     target="_blank"
+     class="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-5 py-3 rounded-lg transition">
+    <i class="fa-brands fa-github text-xl"></i>
+    GitHub
+  </a>
+
+  <!-- Live Project Button (disabled) -->
+  <button type="button" disabled
+     class="flex items-center gap-2 bg-blue-500/50 text-white/70 px-5 py-3 rounded-lg cursor-not-allowed opacity-60">
+    <i class="fa-solid fa-globe text-lg"></i>
+    Live Demo
+  </button>
+
+</div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] hover:-translate-y-2">
+            <img src="asset/motorola_mobile.png"
+              class="w-full h-72 object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+        </div>
+        <!-- ==================== PROJECT-7 END : Motorola Mobile Sales Analytics ==================== -->
+
+        <!-- ==================== PROJECT-8 START : Vendor Performance Analysis ==================== -->
+        <div class="min-w-full grid md:grid-cols-2 gap-10 items-center">
+          <div class="text-white">
+            <h3 class="text-3xl font-bold mb-4">Vendor Performance Analysis</h3>
+            <p class="text-gray-300 mb-6">
+              Power BI dashboard analyzing vendor performance data, highlighting key metrics,
+              purchasing trends, and profitability insights to support strategic vendor decisions.
+            </p>
+            <div class="flex gap-4 flex-wrap">
+
+  <!-- GitHub Button -->
+  <a href="https://github.com/israr-ai/powerbi-projects/tree/main/02-vendor_performance_dashboard"
+     target="_blank"
+     class="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-5 py-3 rounded-lg transition">
+    <i class="fa-brands fa-github text-xl"></i>
+    GitHub
+  </a>
+
+  <!-- Live Project Button (disabled) -->
+  <button type="button" disabled
+     class="flex items-center gap-2 bg-blue-500/50 text-white/70 px-5 py-3 rounded-lg cursor-not-allowed opacity-60">
+    <i class="fa-solid fa-globe text-lg"></i>
+    Live Demo
+  </button>
+
+</div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] hover:-translate-y-2">
+            <video src="vendor_performance_dashboard.mp4" class="w-full h-72 object-cover transition-transform duration-500 hover:scale-110" controls autoplay loop muted playsinline></video>
+          </div>
+        </div>
+        <!-- ==================== PROJECT-8 END : Vendor Performance Analysis ==================== -->
 
       </div>
 

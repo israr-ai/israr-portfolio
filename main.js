@@ -65,10 +65,25 @@ const roles = ["AI Engineer", "Data Scientist", "Frontend Developer", "ML Engine
   let currentIndex = 0;
   const slides = document.getElementById("projectSlides");
   const totalSlides = slides.children.length;
+  const slideItems = Array.from(slides.children);
+  const projectCounter = document.getElementById("projectCounter");
+
+  function playSlideAnimation() {
+    const activeSlide = slideItems[currentIndex];
+    slideItems.forEach((slide) => slide.classList.remove("animate-projectIn"));
+    void activeSlide.offsetWidth; // restart animation
+    activeSlide.classList.add("animate-projectIn");
+  }
 
   function updateSlide() {
     slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    if (projectCounter) {
+      projectCounter.textContent = `Project ${currentIndex + 1} of ${totalSlides}`;
+    }
+    playSlideAnimation();
   }
+
+  updateSlide();
 
   function nextSlide() {
     currentIndex = (currentIndex + 1) % totalSlides;
@@ -78,5 +93,19 @@ const roles = ["AI Engineer", "Data Scientist", "Frontend Developer", "ML Engine
   function prevSlide() {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     updateSlide();
+  }
+
+  // ML Pipeline gallery - one by one auto image switch
+  const mlGallery = document.getElementById("mlPipelineGallery");
+  if (mlGallery) {
+    const mlImages = mlGallery.querySelectorAll(".ml-slide-img");
+    let mlIndex = 0;
+    setInterval(() => {
+      mlImages[mlIndex].classList.remove("opacity-100");
+      mlImages[mlIndex].classList.add("opacity-0");
+      mlIndex = (mlIndex + 1) % mlImages.length;
+      mlImages[mlIndex].classList.remove("opacity-0");
+      mlImages[mlIndex].classList.add("opacity-100");
+    }, 2500);
   }
 
