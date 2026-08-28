@@ -109,3 +109,16 @@ const roles = ["AI Engineer", "Data Scientist", "Frontend Developer", "ML Engine
     }, 2500);
   }
 
+// House Price Prediction gallery - one by one auto image switch
+const housePriceGallery = document.getElementById("housePricePipelineGallery");
+if (housePriceGallery) {
+  const housePriceImages = housePriceGallery.querySelectorAll(".ml-slide-img");
+  let housePriceIndex = 0;
+  setInterval(() => {
+    housePriceImages[housePriceIndex].classList.remove("opacity-100");
+    housePriceImages[housePriceIndex].classList.add("opacity-0");
+    housePriceIndex = (housePriceIndex + 1) % housePriceImages.length;
+    housePriceImages[housePriceIndex].classList.remove("opacity-0");
+    housePriceImages[housePriceIndex].classList.add("opacity-100");
+  }, 2500);
+}
